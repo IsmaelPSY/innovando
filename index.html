@@ -10,16 +10,36 @@
 
     <meta name="robots" content="index, follow" />
     <link rel="icon" type="image/jpg" href="" />
-    <link rel="stylesheet" href="global.css" />
+    <link rel="stylesheet" href="src/global.css" />
   </head>
   <body>
-    <header class="main-header">
-      <strong class="main-header-logo">INNOVANDO</strong>
-      <nav class="main-header-nav">
-        <ul class="main-header-nav-ul">
-          <li><a href="">NOSOTROS</a></li>
-          <li><a href="">CONTACTANOS</a></li>
-        </ul>
+    <header class="header">
+      <nav class="container nav">
+        <a href="#" class="nav__logo">
+          <img src="assets/img/logo.png" alt="logo">
+        </a>
+        <section class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">
+                <img src="assets/icons/casa.png" alt="inicio" class="nav__icon">
+                <span class="nav__name">Inicio</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <img src="assets/icons/equipo.png" alt="equipo" class="nav__icon">
+                <span class="nav__name">Nosotros</span>
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <img src="assets/icons/telefono.png" alt="telefono" class="nav__icon">
+                <span class="nav__name">Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </section>
       </nav>
     </header>
     <main class="container">
@@ -28,14 +48,14 @@
         <h1>Transforma tú <strong class="">NEGOCIO</strong></h1>
         <h2>¿Necesitas soluciones tecnológicas?</h2>
         <h2>¡Empecemos <strong>Ahora</strong>!</h2>
-        <a href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion." 
+        <a
+          href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
           class="home-button"
           target="_blank"
-          >
+        >
           Contactanos
         </a>
       </section>
-
       <!-- Seccion about -->
       <section id="about" class="about">
         <article class="about-header">
@@ -116,7 +136,7 @@
             </figcaption>
           </figure>
         </article>
-      </section>
+      </section>  
       <!-- <section class="contacto">
         <h2 class="title">Contacto</h2>
         <article>
@@ -124,7 +144,8 @@
         </article>
       </section>
     </main> -->
-    <!-- footer -->
+      <!-- footer -->
+    </main>
     <footer class="container footer">
       <section class="footer-logo">
         <strong class="footer-logo__titulo">INNOVANDO</strong>
@@ -140,7 +161,13 @@
         <div>
           <h3>Escríbenos</h3>
           <ul>
-            <li><a href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion." target="_blank">Mensaje al Whatsapp</a></li>
+            <li>
+              <a
+                href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
+                target="_blank"
+                >Mensaje al Whatsapp</a
+              >
+            </li>
           </ul>
         </div>
       </section>
