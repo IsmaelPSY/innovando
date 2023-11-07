@@ -59,6 +59,7 @@ body {
   z-index: 999;
   transition: 0.4s;
   background-color: var(--background);
+  padding: 0 14px;
 }
 .nav {
   height: 3rem;
@@ -138,18 +139,22 @@ body {
 }
 
 .home {
-  padding-top: 4rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
 }
-.home h1 {
-  font-size: 4rem;
+.home-title {
+  text-transform: uppercase;
+  font-size: 2.7rem;
+  background: linear-gradient(to right, var(--color-hover), #fff);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
-.home h1 strong {
-  font-style: italic;
-  font-weight: lighter;
+.home-title span {
+  color: white;
 }
 .home h2,
 h1 {
@@ -162,17 +167,20 @@ h1 {
 
 /* Estilos para un botón */
 .home-button {
-  display: inline-block; /* Hace que el botón se muestre en línea y no ocupe todo el ancho disponible */
   padding: 5px 10px; /* Añade relleno al botón para que sea más fácil de hacer clic */
-  background-color: var(--background-square); /* Color de fondo del botón */
-  color: var(--background); /* Color del texto del botón */
-  border: none; /* Elimina el borde del botón */
+  color: var(--background-square); /* Color del texto del botón */
+  border: 2px solid var(--background-square); /* Elimina el borde del botón */
   border-radius: 5px; /* Añade bordes redondeados al botón */
-  text-align: center; /* Centra el texto dentro del botón */
   text-decoration: none; /* Elimina cualquier subrayado en el texto del botón */
   cursor: pointer; /* Cambia el cursor al pasar por encima del botón */
+  text-transform: uppercase;
+  transition: .2s all ease-in-out;
 }
-
+.home-button:hover{
+  background-color: var(--color-hover);
+  color: var(--background);
+  border: 2px solid transparent;
+}
 .container {
   max-width: 1024px;
   margin: auto;
@@ -278,11 +286,19 @@ h1 {
   width: 100%;
 }
 @media (min-width: 480px) {
+  .home-title {
+    font-size: 4rem;
+  }
+  .home h2{
+    font-size: 2rem;
+  }
+  .home-button{
+    border-radius: .6rem;
+    padding: .7rem 1rem;
+  }
   .title {
     color: var(--color);
     font-size: var(--title);
-  }
-  .about {
   }
   .about-section {
     display: flex;
@@ -303,6 +319,16 @@ h1 {
   }
 }
 @media (min-width: 767px) {
+  .home {
+    padding-top: 7rem;
+  }
+  .home-button{
+    border-radius: .6rem;
+    padding: .7rem 1rem;
+  }
+  .home-title {
+    font-size: 6rem;
+  }
   .cuadrado__pequeño,
   .cuadrado__grande {
     display: flex;
@@ -318,6 +344,13 @@ h1 {
   }
 }
 @media (min-width: 1024px) {
+  .home h2{
+    text-align: left;
+    font-size: 3rem;
+  }
+  .home-title {
+    font-size: 7rem;
+  }
   .cuadrado__pequeño,
   .cuadrado__grande {
     display: flex;
