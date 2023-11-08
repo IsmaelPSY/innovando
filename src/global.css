@@ -148,7 +148,7 @@ body {
 .home-title {
   text-transform: uppercase;
   font-size: 2.7rem;
-  background: linear-gradient(to right, var(--color-hover), #fff);
+  background: linear-gradient(to right bottom, var(--color-hover), #fff);
   color: transparent;
   background-clip: text;
   -webkit-background-clip: text;
@@ -188,7 +188,8 @@ h1 {
 }
 .about {
   position: relative;
-  margin: 4rem 0;
+  margin-top: 4rem;
+  padding-top: 1rem;
 }
 .about-header {
   position: relative;
@@ -250,6 +251,9 @@ h1 {
   text-align: center;
   margin-bottom: 4rem;
 }
+.about-choose figure:nth-last-child(){
+  margin-bottom: 0;
+}
 .about-choose figure figcaption {
   font-size: var(--sub-title-mobile);
   display: flex;
@@ -258,7 +262,30 @@ h1 {
 .about-choose figure figcaption span {
   font-size: var(--text);
 }
-
+.contact{
+  margin: 3rem 0;
+}
+.contact-items{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.contact-phone,.contact-email{
+  background-color: #ffffff90;
+  border-radius: 25px;
+  padding: 2rem;
+}
+.contact-phone-container{
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid var(--background-square);
+}
+.contact-phone__icon{
+  filter: invert();
+  width: 100%;
+  padding: 5px;
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -316,6 +343,10 @@ h1 {
 
   .about-section__text {
     flex: 1;
+  }
+  .contact-items{
+    flex-direction: row;
+    justify-content: flex-end;
   }
 }
 @media (min-width: 767px) {
