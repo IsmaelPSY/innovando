@@ -51,6 +51,9 @@ body {
   font-family: var(--font-grotesk);
   padding: 0 14px;
 }
+.icon-whatsapp{
+  display: none;
+}
 .header {
   position: fixed;
   top: 0;
@@ -135,6 +138,20 @@ body {
   }
   .nav__link:hover {
     color: var(--color-hover);
+  }
+  .whatsapp{
+    display: none;
+  }
+  .icon-whatsapp{
+    display: inline;
+    position: fixed;
+    width: 55px;
+    height: 55px;
+    right: 2rem;
+    bottom: 2rem;
+    background-color: var(--background);
+    z-index: 999;
+    border-radius: 50%;
   }
 }
 .home{
