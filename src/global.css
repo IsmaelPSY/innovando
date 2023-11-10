@@ -292,11 +292,19 @@ h1 {
   font-size: var(--text);
 }
 .contact {
-  margin: 3rem 0;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-top: 3rem;
+}
+.contact .title{
+  margin-bottom: 1.5rem;
 }
 .contact-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+.contact-info{
+  margin-top: 1rem;
 }
 .contact-box-phone,
 .contact-box-mail {
