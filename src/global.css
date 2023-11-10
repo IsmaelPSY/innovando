@@ -292,11 +292,18 @@ h1 {
   font-size: var(--text);
 }
 .contact {
-  margin: 3rem 0;
+  margin-bottom: 2rem;
+  padding-top: 4rem;
+}
+.contact .title{
+  margin-bottom: 1.5rem;
 }
 .contact-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
+}
+.contact-info{
+  margin-top: 1rem;
 }
 .contact-box-phone,
 .contact-box-mail {
@@ -471,6 +478,9 @@ h1 {
   }
   .about-choose figure figcaption span {
     margin: 0 1rem;
+  }
+  .about-choose figure:nth-last-child(2) {
+    margin-bottom: 0;
   }
   .contact-content {
     flex-direction: row;
