@@ -292,9 +292,8 @@ h1 {
   font-size: var(--text);
 }
 .contact {
-  margin-top: 3rem;
   margin-bottom: 2rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 .contact .title{
   margin-bottom: 1.5rem;
@@ -479,6 +478,9 @@ h1 {
   }
   .about-choose figure figcaption span {
     margin: 0 1rem;
+  }
+  .about-choose figure:nth-last-child(2) {
+    margin-bottom: 0;
   }
   .contact-content {
     flex-direction: row;
