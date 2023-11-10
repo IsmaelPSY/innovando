@@ -27,7 +27,15 @@
   <link rel="stylesheet" href="src/global.css" />
 </head>
 
+
 <body>
+  <a
+    href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
+    target="_blank"
+    class="icon-whatsapp"
+  >
+    <img src="assets/icons/whatsapp-line.svg" alt="whatsapp line" />
+  </a>
   <header class="header">
     <nav class="container nav">
       <a href="#" class="nav__logo">
@@ -37,20 +45,46 @@
         <ul class="nav__list">
           <li class="nav__item">
             <a href="#home" class="nav__link">
-              <img src="assets/icons/casa.png" alt="inicio" class="nav__icon" />
+              <img
+                src="assets/icons/casa.png"
+                alt="inicio"
+                class="nav__icon"
+              />
               <span class="nav__name">Inicio</span>
             </a>
           </li>
           <li class="nav__item">
             <a href="#about" class="nav__link">
-              <img src="assets/icons/equipo.png" alt="equipo" class="nav__icon" />
+              <img
+                src="assets/icons/equipo.png"
+                alt="equipo"
+                class="nav__icon"
+              />
               <span class="nav__name">Nosotros</span>
             </a>
           </li>
           <li class="nav__item">
             <a href="#contact" class="nav__link">
-              <img src="assets/icons/telefono.png" alt="telefono" class="nav__icon" />
+              <img
+                src="assets/icons/telefono.png"
+                alt="telefono"
+                class="nav__icon"
+              />
               <span class="nav__name">Contacto</span>
+            </a>
+          </li>
+          <li class="nav__item whatsapp">
+            <a
+              href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
+              class="nav__link"
+              target="_blank"
+            >
+              <img
+                src="assets/icons/whatsapp.svg"
+                alt="telefono"
+                class="nav__icon"
+              />
+              <span class="nav__name">Whatsapp</span>
             </a>
           </li>
         </ul>
@@ -64,8 +98,11 @@
         <h1 class="home-title">Transforma tú <br /><span>Negocio</span></h1>
         <h2>¿Necesitas soluciones tecnológicas?</h2>
         <h2>¡Empecemos <strong>Ahora</strong>!</h2>
-        <a href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
-          class="home-button" target="_blank">
+        <a
+          href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
+          class="home-button"
+          target="_blank"
+        >
           Contactanos
         </a>
       </article>
@@ -109,92 +146,133 @@
           <img src="assets/img/expertise.png" alt="Habilidad" />
           <figcaption>
             Habilidad
-            <span>Nuestro equipo de expertos experimentados tiene el conocimiento
+            <span
+              >Nuestro equipo de expertos experimentados tiene el conocimiento
               y la experiencia. para ofrecer soluciones de TI innovadoras que
-              satisfaga sus necesidades únicas.</span>
+              satisfaga sus necesidades únicas.</span
+            >
           </figcaption>
         </figure>
         <figure>
           <img src="assets/img/technology.png" alt="tecnologia" />
           <figcaption>
             Tecnologia
-            <span>Nuestro equipo de expertos experimentados tiene el conocimiento
+            <span
+              >Nuestro equipo de expertos experimentados tiene el conocimiento
               y la experiencia. para ofrecer soluciones de TI innovadoras que
-              satisfaga sus necesidades únicas.</span>
+              satisfaga sus necesidades únicas.</span
+            >
           </figcaption>
         </figure>
         <figure>
           <img src="assets/img/solutions.png" alt="soluciones" />
           <figcaption>
             Soluciones
-            <span>Nuestro equipo de expertos experimentados tiene el conocimiento
+            <span
+              >Nuestro equipo de expertos experimentados tiene el conocimiento
               y la experiencia. para ofrecer soluciones de TI innovadoras que
-              satisfaga sus necesidades únicas.</span>
+              satisfaga sus necesidades únicas.</span
+            >
           </figcaption>
         </figure>
         <figure>
           <img src="assets/img/results.png" alt="resultados" />
           <figcaption>
             Resultados
-            <span>Nuestro equipo de expertos experimentados tiene el conocimiento
+            <span
+              >Nuestro equipo de expertos experimentados tiene el conocimiento
               y la experiencia. para ofrecer soluciones de TI innovadoras que
-              satisfaga sus necesidades únicas.</span>
+              satisfaga sus necesidades únicas.</span
+            >
           </figcaption>
         </figure>
       </article>
     </section>
     <section id="contact" class="contact">
-      <h2 class="title">Contacto</h2>
-      <article class="contact-items">
-        <section class="contact-phone">
-          <div class="contact-phone-container">
-            <img src="assets/icons/telefono.png" alt="" class="contact-phone__icon">
+      <article>
+        <h2 class="title">Contacto</h2>
+      </article>
+      <article class="contact-content">
+        <div class="contact-info">
+          <figure class="contact-box-phone">
+            <img
+              src="assets/icons/telefono.png"
+              alt="telefono"
+              class="icon"
+            />
+            <figcaption class="contact-box__content">
+              +51 980 852 648
+            </figcaption>
+          </figure>
+          <figure class="contact-box-mail">
+            <img src="assets/icons/mail-line.svg" alt="mail" class="icon" />
+            <figcaption class="contact-box__content">
+              innovandosotec@gmail.com
+            </figcaption>
+          </figure>
+        </div>
+        <form
+          class="contact-form"
+          action="https://formsubmit.co/devarmuto@gmail.com"
+          method="POST"
+        >
+          <h2>Envianos un mensaje</h2>
+          <div class="input-box">
+            <input type="text" name="name" id="" required />
+            <span>Nombre y Apellido</span>
           </div>
-          <div>
-            <p class="">Celular</p>
-            <ul>
-              <li class="nav__item">
-                +51 980 852 648
-              </li>
-            </ul>
+          <div class="input-box">
+            <input type="text" name="email" id="" required />
+            <span>Correo Electrónico</span>
           </div>
-        </section>
-        <section class="contact-email">
-          <div class="contact-phone-container">
-            <img src="assets/icons/telefono.png" alt="" class="contact-phone__icon">
+          <div class="input-box">
+            <textarea required name="coments"></textarea>
+            <span>Mensaje</span>
           </div>
-          <div>
-            <p class="">Email</p>
-            <ul>
-              <li class="nav__item">
-                innovandoSotec@gmail.com
-              </li>
-            </ul>
+          <div class="input-box">
+            <input type="submit" value="Enviar" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://innovando.netlify.app/"
+            />
+            <input type="hidden" name="_captcha" value="false" />
           </div>
-        </section>
+        </form>
       </article>
     </section>
   </main>
   <footer class="container footer">
     <section class="footer-logo">
-      <strong class="footer-logo__titulo">INNOVANDO</strong>
+      <img src="assets/img/logo.png" alt="logo" />
     </section>
     <section class="footer-explora">
       <div>
         <h3>Explora</h3>
-        <ul>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Contáctanos</a></li>
+        <ul class="footer-explora-items">
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#contact">Contáctanos</a></li>
         </ul>
       </div>
-      <div>
-        <h3>Escríbenos</h3>
-        <ul>
-          <li>
-            <a href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
-              target="_blank">Mensaje al Whatsapp</a>
-          </li>
-        </ul>
+
+      <div class="contact-info">
+        <h3>Social</h3>
+        <figure class="contact-box-phone">
+          <img
+            src="assets/icons/telefono.png"
+            alt="telefono"
+            class="icon"
+          />
+          <figcaption class="contact-box__content">
+            +51 980 852 648
+          </figcaption>
+        </figure>
+        <figure class="contact-box-mail">
+          <img src="assets/icons/mail-line.svg" alt="mail" class="icon" />
+          <figcaption class="contact-box__content">
+            innovandosotec@gmail.com
+          </figcaption>
+        </figure>
       </div>
     </section>
   </footer>
