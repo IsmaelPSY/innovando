@@ -1,40 +1,16 @@
-<!DOCTYPE html>
-<html>
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+---
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Innovando | It solutions</title>
-  <meta name="description"
-    content="Innova con nosotros! Somos INNOVANDO, una empresa en crecimiento con la visión de convertirnos en la principal agencia de desarrollo web e innovación en nuestra región.
-      Si eres un emprendedor con un negocio formalizado en busca de un socio confiable y comprometido, estás en el lugar correcto.    
-      ¿Deseas darle a tu emprendimiento una sólida presencia en internet y explorar nuevas formas de ofrecer tus productos o servicios? 
-      No dudes en contactarnos. Estamos ansiosos por ayudarte a hacer crecer tu negocio y ofrecerte soluciones innovadoras." />
-  <link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
-
-  <!-- OPEN GRAPH TAGS missing -->
-  <meta property="og:title" content="Innovando | It solutions" />
-  <meta property="og:url" content="https://innovando.netlify.app/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:image" content="./assets/img/innovando-logo.png" />
-  <meta property="og:description" content="Innova con nosotros! Somos INNOVANDO, una empresa en crecimiento con la visión de convertirnos en la principal agencia de desarrollo web e innovación en nuestra región.
-  Si eres un emprendedor con un negocio formalizado en busca de un socio confiable y comprometido, estás en el lugar correcto.    
-  ¿Deseas darle a tu emprendimiento una sólida presencia en internet y explorar nuevas formas de ofrecer tus productos o servicios? 
-  No dudes en contactarnos. Estamos ansiosos por ayudarte a hacer crecer tu negocio y ofrecerte soluciones innovadoras." />
-
-  <meta name="robots" content="index, follow" />
-  <link rel="icon" type="image/jpg" href="" />
-  <link rel="stylesheet" href="src/global.css" />
-</head>
-
-
-<body>
-  <a
+<Layout title="Welcome to Astro.">
+	<main>
+		<a
     href="https://wa.me/51980852648?text=Hola%20Innovando%21%20Solicito%20m%C3%A1s%20informacion."
     target="_blank"
     class="icon-whatsapp"
   >
-    <img src="assets/icons/whatsapp-line.svg" alt="whatsapp line" />
+		<img src="assets/icons/whatsapp-line.svg" alt="whatsapp line" />
   </a>
   <header class="header">
     <nav class="container nav">
@@ -276,7 +252,7 @@
       </div>
     </section>
   </footer>
-  <script src="codigo.js"></script>
-</body>
+	</main>
 
-</html>
+</Layout>
+

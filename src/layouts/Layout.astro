@@ -1,0 +1,41 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>Innovando | It solutions</title>
+		<meta name="description"
+			content="Innova con nosotros! Somos INNOVANDO, una empresa en crecimiento con la visión de convertirnos en la principal agencia de desarrollo web e innovación en nuestra región.
+				Si eres un emprendedor con un negocio formalizado en busca de un socio confiable y comprometido, estás en el lugar correcto.    
+				¿Deseas darle a tu emprendimiento una sólida presencia en internet y explorar nuevas formas de ofrecer tus productos o servicios? 
+				No dudes en contactarnos. Estamos ansiosos por ayudarte a hacer crecer tu negocio y ofrecerte soluciones innovadoras." />
+		<link rel="shortcut icon" href="./assets/icons/favicon.png" type="image/png">
+	
+		<!-- OPEN GRAPH TAGS missing -->
+		<meta property="og:title" content="Innovando | It solutions" />
+		<meta property="og:url" content="https://innovando.netlify.app/" />
+		<meta property="og:type" content="website" />
+		<meta property="og:image" content="./assets/img/innovando-logo.png" />
+		<meta property="og:description" content="Innova con nosotros! Somos INNOVANDO, una empresa en crecimiento con la visión de convertirnos en la principal agencia de desarrollo web e innovación en nuestra región.
+		Si eres un emprendedor con un negocio formalizado en busca de un socio confiable y comprometido, estás en el lugar correcto.    
+		¿Deseas darle a tu emprendimiento una sólida presencia en internet y explorar nuevas formas de ofrecer tus productos o servicios? 
+		No dudes en contactarnos. Estamos ansiosos por ayudarte a hacer crecer tu negocio y ofrecerte soluciones innovadoras." />
+	
+		<meta name="robots" content="index, follow" />
+		<link rel="icon" type="image/jpg" href="" />
+		<link rel="stylesheet" href="src/global.css" />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+	</body>
+</html>
+
